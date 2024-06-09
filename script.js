@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function playMidiFile(note) {
-        const filePath = `../mid/${note}.mid`;
+        const filePath = `mid/${note}.mid`;
         if (typeof MIDIjs !== 'undefined' && MIDIjs.play) {
             MIDIjs.play(filePath);
         } else {
