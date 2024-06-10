@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (startGameBtn) {
         startGameBtn.addEventListener('click', function() {
-            window.location.href = 'game.html';
+            window.location.href = 'pages/game.html';
         });
     }
 
     if (knowButton) {
         knowButton.addEventListener('click', function() {
-            window.location.href = 'rules.html';
+            window.location.href = 'pages/rules.html';
         });
     }
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function playMidiFile(note) {
-        const filePath = `../CompeGuitar/mid/${note}.mid`;
+        const filePath = `../mid/${note}.mid`;
         if (typeof MIDIjs !== 'undefined' && MIDIjs.play) {
             MIDIjs.play(filePath);
         } else {
@@ -408,3 +408,4 @@ function initializeAudioContext() {
         context.resume();
     }
 }
+ChatGPT
